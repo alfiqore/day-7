@@ -1,0 +1,71 @@
+[[package]]
+name = "clvm"
+version = "0.41"
+description = "[Contract Language | Chialisp] Virtual Machine"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "clvm-tools"
+version = "0.4.9"
+description = "CLVM compiler."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+clvm = ">=0.9.2"
+clvm-tools-rs = ">=0.1.37"
+importlib-metadata = "*"
+
+[package.extras]
+dev = ["pytest"]
+
+[[package]]
+name = "clvm-tools-rs"
+version = "0.1.43"
+description = "tools for working with chialisp language; compiler, repl, python and wasm bindings"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "importlib-metadata"
+version = "7.1.0"
+description = "Read metadata from Python packages"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+zipp = ">=0.5"
+
+[package.extras]
+docs = ["sphinx (>=3.5)", "jaraco.packaging (>=9.3)", "rst.linker (>=1.9)", "furo", "sphinx-lint", "jaraco.tidelift (>=1.4)"]
+perf = ["ipython"]
+testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-ruff (>=0.2.1)", "packaging", "pyfakefs", "flufl.flake8", "pytest-perf (>=0.9.2)", "jaraco.test (>=5.4)", "pytest-mypy", "importlib-resources (>=1.3)"]
+
+[[package]]
+name = "zipp"
+version = "3.19.0"
+description = "Backport of pathlib-compatible object wrapper for zip files"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.extras]
+docs = ["sphinx (>=3.5)", "jaraco.packaging (>=9.3)", "rst.linker (>=1.9)", "furo", "sphinx-lint", "jaraco.tidelift (>=1.4)"]
+testing = ["pytest (>=6,<8.1.0 || >=8.2.0)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-mypy", "pytest-enabler (>=2.2)", "pytest-ruff (>=0.2.1)", "jaraco.itertools", "jaraco.functools", "more-itertools", "big-o", "pytest-ignore-flaky", "jaraco.test"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "b7164cde26df5036f74f7155f6531b7a72a721760b80aaf16dee32af5bf5b9bd"
+
+[metadata.files]
+clvm = []
+clvm-tools = []
+clvm-tools-rs = []
+importlib-metadata = []
+zipp = []
